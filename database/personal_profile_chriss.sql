@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 03, 2025 at 08:45 PM
+-- Generation Time: Dec 04, 2025 at 08:56 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -143,7 +143,7 @@ CREATE TABLE `resumes` (
 --
 
 INSERT INTO `resumes` (`id`, `date`, `job`, `place`, `description`, `type`, `created_at`, `updated_at`) VALUES
-(1, '2023 - 2026', 'SMK Negri 1 Sanden', 'Rekayasa Perangkat Lunak', 'Saya Faiq Nadhif Adiwinata Siswa SMK Negeri 1 Sanden, Jurusan Rekayasa Perangkat Lunak (RPL). Selama menempuh pendidikan di SMK, saya aktif dalam mengikuti mata pelajaran produktif di bidang kejuruan. Dan di luar kegiatan sekolah, saya juga berjualan kopi, sebagai bentuk kemandirian dan jiwa kewirausahaan', 'education', '2025-12-03 19:44:43', '2025-12-03 20:21:46'),
+(1, '2023 - 2026', 'SMKN 1 Sanden', 'Rekayasa Perangkat Lunak', 'Saya Charisda RIzky Siswa SMK Negeri 1 Sanden, Jurusan Rekayasa Perangkat Lunak (RPL). Selama menempuh pendidikan di SMK, saya aktif dalam mengikuti mata pelajaran produktif di bidang kejuruan. Dan di luar kegiatan sekolah, saya juga berjualan kopi, sebagai bentuk kemandirian dan jiwa kewirausahaan', 'education', '2025-12-03 19:44:43', '2025-12-04 08:55:04'),
 (2, '2025', 'PT.Lauwba techno Indonesia', 'Praktik Kerja Lapangan', 'Selama menjalani Praktik Kerja Lapangan (PKL) di PT Lauwba Techno Indonesia, saya mempelajari dan mengembangkan keterampilan dalam teknologi web, khususnya di bidang HTML, CSS, Bootstrap, serta pemrograman back-end menggunakan PHP. Selain itu, saya juga mempelajari konsep dan implementasi CRUD (Create, Read, Update, Delete) dalam pengelolaan data berbasis web.', 'experience', '2025-12-03 19:44:43', '2025-12-03 19:44:43'),
 (3, '2020', 'Rekayasa Perangkat Lunak', 'Yogyakarta', 'Pengalaman dan pendidikan di bidang Rekayasa Perangkat Lunak', 'education', '2025-12-03 19:44:43', '2025-12-03 20:22:42');
 
@@ -186,7 +186,7 @@ CREATE TABLE `skills` (
   `description` text,
   `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `skills`
@@ -353,7 +353,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT for table `skills`
 --
 ALTER TABLE `skills`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `sosmeds`
